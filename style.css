@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 50%;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+}
+
+.text-wrapper {
+  width: 100%;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top-text {
+  font-family: "Montserrat", sans-serif;
+  color: slategray;
+  letter-spacing: 0.5em;
+  font-size: 0.75rem;
+}
+.title {
+  font-size: 1.5rem;
+}
+.product-detail {
+  font-family: "Montserrat", sans-serif;
+  color: slategray;
+  font-size: 0.82rem;
+}
+
+.priceside {
+  display: flex;
+  align-items: center;
+}
+.price {
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+.original-price {
+  color: slategray;
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  margin-left: 2em;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: aliceblue;
+  border: none;
+  padding: 1em 5.5em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+button:hover {
+  background-color: hsl(158, 47%, 23%);
+}
+.icon {
+  background-image: url("images/icon-cart.svg");
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 975px) {
+  .card {
+    margin-top: 20em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  img {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 0%;
+  }
+  .text-wrapper {
+    padding: 0 1em;
+  }
+}
