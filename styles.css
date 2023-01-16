@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.nav {
+  visibility: hidden;
+  position: absolute;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+.primary_nav {
+  background-color: #2e323f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50px;
+}
+
+.primary_nav_list {
+  color: #ffffffff;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.nav_logo {
+  width: 3rem;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.nav-toggle {
+  position: absolute;
+  left: 1%;
+}
+
+.item {
+  font-family: "Oswald", sans-serif;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: #a59678;
+  color: #ffffffff;
+  border: none;
+  padding: 0.25em 1.5em;
+  border-radius: 25px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 0.5em;
+}
+
+.item:hover,
+button:hover,
+.secondary_nav_item:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #3b4050;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffffff;
+}
+.white_header {
+  max-width: 300px;
+}
+.main_right {
+  max-width: 300px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.125em;
+}
+
+.gold_h1 {
+  color: #a59678;
+}
+
+p {
+  font-weight: 100;
+}
+
+.three_columns {
+  background-color: #e9e9e9fe;
+  text-align: center;
+  padding: 2em;
+}
+
+.three_columns h4 {
+  color: #a59678;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+
+.column {
+  margin-top: 1em;
+}
+h4 {
+  margin: 0;
+}
+
+main {
+  padding: 2em;
+}
+
+main h3 {
+  color: #a59678;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+.main_img {
+  width: 100%;
+  max-height: 300px;
+}
+.img_wrapper {
+  margin: 2em 0em;
+}
+
+aside {
+  text-align: center;
+}
+
+aside h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+}
+
+.aside_box {
+  background-color: #3b4050;
+  padding: 1em;
+  margin: 1em 0.5em;
+  color: #ffffffff;
+}
+
+footer {
+  background-color: #3b4050;
+  padding: 2em;
+  color: #ffffff92;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.75rem;
+}
+
+.secondary_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary_nav_item {
+  margin-left: 0;
+  margin-top: 0.5em;
+}
+h5 {
+  color: #a59678;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .nav {
+    visibility: visible;
+    position: relative;
+  }
+  .nav-toggle {
+    visibility: hidden;
+  }
+
+  .nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+
+  .primary_nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .primary_nav_list {
+    display: flex;
+  }
+  .item {
+    margin: 0em 1em;
+  }
+  .nav_logo {
+    margin-left: 2em;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5em;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .main_right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .learn {
+    width: 40%;
+  }
+
+  .three_columns {
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    padding-left: 2.25em;
+    max-width: 400px;
+  }
+  .column p {
+    font-size: smaller;
+  }
+  aside {
+    display: flex;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .secondary_nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+  }
+  .secondar_nav_left {
+    max-width: 40%;
+  }
+  .secondary_nav {
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body,
+  html {
+    font-size: 20px;
+  }
+  .main_right {
+    margin-top: 7em;
+    margin-left: 2em;
+  }
+  main {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main_left {
+    max-width: 50%;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+  }
+  .aside_box {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body,
+  html {
+    font-size: 25px;
+  }
+}
