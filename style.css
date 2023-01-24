@@ -1,0 +1,125 @@
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: vv
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.card {
+  background-color: white;
+  width: 95%;
+  border-radius: 20px;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  text-align: center;
+  padding-bottom: 2em;
+  max-width: 400px;
+}
+
+.heroImage {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: hsl(223, 47%, 23%);
+}
+p {
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 1.75em;
+}
+
+.priceBox {
+  background-color: hsl(225, 100%, 98%);
+  margin-left: 2em;
+  margin-right: 2em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.columnText {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.boldText {
+  color: hsl(223, 47%, 23%);
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+a:active {
+  text-decoration: none;
+  color: hsla(269, 35%, 40%, 0.765);
+  opacity: 60%;
+}
+
+button {
+  width: 80%;
+  margin-top: 1em;
+  border: none;
+  background-color: #fff;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  border-radius: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.blueButton {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  margin-top: 1.5em;
+  box-shadow: 0px 5px 15px hsl(228, 59%, 77%);
+}
+
+.blueButton:active {
+  opacity: 60%;
+}
+.textDarken:active {
+  color: hsl(245, 75%, 52%);
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
