@@ -1,0 +1,145 @@
+/* ## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 15px;
+  margin: 0;
+  background-color: black;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: hsl(244, 38%, 16%);
+  margin: 7em 2em 3em 2em;
+  border-radius: 15px;
+  padding-bottom: 2em;
+  max-width: 1040px;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+}
+
+.imgColorOverlay {
+  position: absolute;
+  background-color: hsla(277, 64%, 61%, 0.51);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.textSide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  max-width: 80%;
+  color: hsl(0, 0%, 100%);
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  max-width: 80%;
+  line-height: 1.5em;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.bulletPoints {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.bulletPointsWords {
+  font-size: 0.75rem;
+  margin-top: 0.2em;
+}
+
+.boldWhiteText {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-top: 0.75em;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .component {
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0 2em;
+  }
+
+  .imgWrapper {
+    width: 100%;
+  }
+  img {
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
+
+  .imgColorOverlay {
+    position: absolute;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
+
+  .textSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .bulletPoints {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
